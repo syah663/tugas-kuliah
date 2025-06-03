@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Penggemar Anime Sejati</title>
+</head>
+<body>
+
+<!-- Header -->
+<h1>Selamat Datang di Dunia Anime</h1>
+<p><em>Di sini kita berbagi cinta terhadap anime dari berbagai genre!</em></p>
+
+<!-- Link -->
+<p>Kamu bisa menonton anime favoritmu di 
+<a href="https://anichin.cafe"  target="_blank">Anichin.cafe</a>, 
+dan akan terbuka di tab baru.</p>
+
+<!-- Gambar -->
+<img src="anime-characters.jpg" alt="Kumpulan Karakter Anime Populer" width="400"/>
+
+<!-- Daftar Anime Favorit -->
+<h2>Daftar Anime Terpopuler 2024</h2>
+<ol>
+   <li>Battle Through the Heavens (BTTH)</li>
+   <li>Demon Slayer: Kimetsu no Yaiba</li>
+   <li>Attack on Titan: Final Season</li>
+   <li>Jujutsu Kaisen</li>
+   <li>One Piece</li>
+</ol>
+
+<!-- Tabel Rekomendasi -->
+<h2>Tabel Rekomendasi Anime</h2>
+<table border="1">
+  <tr>
+    <th>Nama Anime</th>
+    <th>Genre</th>
+    <th>Rating (MyAnimeList)</th>
+  </tr>
+  <tr>
+    <td>Battle Through the Heavens</td>
+    <td>Action, Adventure, Fantasy</td>
+    <td>8.16</td>
+  </tr>
+  <tr>
+    <td>Jujutsu Kaisen</td>
+    <td>Action, Dark Fantasy</td>
+    <td>8.57</td>
+  </tr>
+  <tr>
+    <td>Demon Slayer</td>
+    <td>Action, Historical</td>
+    <td>8.73</td>
+  </tr>
+</table>
+<br />
+
+<!-- Form Penggemar Anime -->
+<h2>Isi Form Penggemar Anime</h2>
+<form action="proses.html" method="get">
+
+   Nama: 
+   <input type="text" name="nama" placeholder="Masukkan nama kamu" />
+   <br /><br />
+
+   Email:
+   <input type="email" name="email" placeholder="contoh@email.com" />
+   <br /><br />
+
+   Jenis Kelamin: 
+   <input type="radio" name="jenis_kelamin" value="laki-laki" checked /> Laki-Laki
+   <input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan
+   <br /><br />
+
+   Genre Favorit: 
+   <input type="checkbox" name="genre_action" /> Action
+   <input type="checkbox" name="genre_romance" checked /> Romance
+   <input type="checkbox" name="genre_fantasy" /> Fantasy
+   <br /><br />
+
+   Pilih Anime Favorit:
+   <select name="anime_favorit">
+      <option value="btth">Battle Through the Heavens</option>
+      <option value="jujutsu_kaisen">Jujutsu Kaisen</option>
+      <option value="one_piece">One Piece</option>
+      <option value="demon_slayer">Demon Slayer</option>
+   </select>
+   <br /><br />
+
+   Ulasan Singkat:
+   <br />
+   <textarea name="ulasan" rows="5" cols="40" placeholder="Berikan ulasan singkat tentang anime favoritmu..."></textarea>
+   <br /><br />
+
+   <input type="submit" value="Kirim Data!" />
+   <input type="reset" value="Hapus Isian" />
+
+</form>
+
+</body>
+</html>

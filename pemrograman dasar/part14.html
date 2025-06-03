@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Form Komentar Penggemar Anime</title>
+</head>
+<body>
+
+<h2>Kirim Ulasan Anime Favoritmu</h2>
+
+<form action="proses_ulasan.html" method="post">
+
+  <label for="nama">Nama Lengkap:</label><br />
+  <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu" size="40" />
+  <br /><br />
+
+  <label for="email">Email:</label><br />
+  <input type="email" id="email" name="email" placeholder="contoh@email.com" size="40" />
+  <br /><br />
+
+  <label>Jenis Kelamin:</label><br />
+  <input type="radio" id="jk_laki" name="jenis_kelamin" value="laki-laki" />
+  <label for="jk_laki">Laki-Laki</label><br />
+  <input type="radio" id="jk_perempuan" name="jenis_kelamin" value="perempuan" />
+  <label for="jk_perempuan">Perempuan</label>
+  <br /><br />
+
+  <label>Hobi (boleh pilih lebih dari satu):</label><br />
+  <input type="checkbox" id="baca_manga" name="hobi_baca_manga" />
+  <label for="baca_manga">Baca Manga</label><br />
+  <input type="checkbox" id="nonton_anime" name="hobi_nonton_anime" checked />
+  <label for="nonton_anime">Nonton Anime</label><br />
+  <input type="checkbox" id="main_game" name="hobi_main_game" />
+  <label for="main_game">Main Game anime</label>
+  <br /><br />
+
+  <label for="anime_fav">Pilih Anime Favorit:</label><br />
+  <select id="anime_fav" name="anime_favorit">
+    <option value="one_piece">One Piece</option>
+    <option value="btth" selected>Battle Through the Heavens</option>
+    <option value="attack_on_titan">Attack on Titan</option>
+    <option value="demon_slayer">Demon Slayer</option>
+  </select>
+  <br /><br />
+
+  <label for="ulasan">Ulasan Kamu:</label><br />
+  <textarea id="ulasan" name="ulasan" rows="6" cols="50" placeholder="Tulis ulasan atau kesan kamu..."></textarea>
+  <br /><br />
+
+  <input type="submit" value="Kirim Ulasan" />
+  <input type="reset" value="Hapus Isian" />
+
+</form>
+
+</body>
+</html>
